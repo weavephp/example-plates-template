@@ -1,0 +1,35 @@
+{
+	"name": "weavephp/example-plates-template",
+	"description": "Weave glue-framework example app with plates templating",
+	"type": "weave-example",
+	"keywords" : ["weave", "framework", "example"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Robert Goldsmith",
+			"email": "r.s.goldsmith@far-blue.co.uk"
+		}
+	],
+	"require": {
+		"weavephp/weave": "^0.0.6",
+		"weavephp/config-zend":"^0.0.4",
+		"weavephp/container-aura": "^0.0.6",
+		"weavephp/error-whoops": "^0.0.3",
+		"weavephp/http-zenddiactoros": "^0.0.3",
+		"weavephp/middleware-relay": "^0.0.3",
+		"weavephp/router-aura": "^0.0.4",
+		"league/plates": "3.*"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	},
+	"scripts": {
+		"phpcs": "php vendor/bin/phpcs",
+		"phan": "docker run -v $PWD:/mnt/src --rm -u \"$(id -u):$(id -g)\" cloudflare/phan:latest -po analysis.txt"
+	}
+}
