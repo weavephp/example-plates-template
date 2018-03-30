@@ -11,13 +11,13 @@
 		}
 	],
 	"require": {
-		"weavephp/weave": "^0.0.6",
+		"weavephp/weave": "^0.1.2",
 		"weavephp/config-zend":"^0.0.4",
-		"weavephp/container-aura": "^0.0.6",
-		"weavephp/error-whoops": "^0.0.3",
+		"weavephp/container-aura": "^0.1.1",
+		"weavephp/error-whoops": "^0.0.4",
 		"weavephp/http-zenddiactoros": "^0.0.3",
 		"weavephp/middleware-relay": "^0.0.3",
-		"weavephp/router-aura": "^0.0.4",
+		"weavephp/router-aura": "^0.1.0",
 		"league/plates": "3.*"
 	},
 	"require-dev": {
